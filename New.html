@@ -1,0 +1,145 @@
+<html>
+
+<head>
+<title></title>
+<style type="">
+.nothing{
+position: absolute;
+left: 250px;
+top: 25px;
+}  
+  
+</style>
+</head>
+<body>
+<div class="nothing">Enter your name</div>
+  <form>
+    <pre>
+    <label>Username</label>
+    <input type="text" name="">
+
+    <label>Password</label>
+    <input type="password" name="">
+
+    <button>submit</button>
+
+    </pre>
+  </form>
+   <!-- <form id="registration">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="fname">
+    <br><br>
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lname">
+    <br><br>
+    <label for="Email">Email id</label>
+    <input type="text" id="email" name="email">
+    <br><br>
+    <input type="submit" value="submit">
+
+  </form>
+  <form id="loginform">
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="fname">
+    <br><br>
+    <label for="password">Enter password</label>
+    <input type="text" id="password" name="password">
+    <br><br>
+    <input type="submit" value="login">
+
+  </form>
+<button id="btn">sign-in</button>
+<button id="btn2">login</button> -->
+
+
+<script src="jquery.js" ></script>
+<!-- 
+ <script type="text/javascript">
+  $(document).ready(function(){
+    
+    $("#btn").click(function(){
+      $("#registration").hide();
+    })
+
+  $("#btn").dblclick(function(){
+  $("#registration").show()
+    })
+    })
+
+
+    $(document).ready(function(){
+    
+    $("#btn2").click(function(){
+
+      $("#loginform").hide();
+    }) 
+  
+
+  $("#btn2").dblclick(function(){
+  $("#loginform").show()
+    })
+    })
+</script> -->
+ <!-- 
+// <script type="text/javascript">
+
+//      $('.box').click(function(){
+//         $(this).css("background-color","red")
+//   })
+//   $('.box').dblclick(function(){
+//      $(this).css("background-color","blue")
+//   })
+//   $('.box').contextmenu(function(){
+//     $(this).css("transform","50px")
+//   })
+//   $('.box').hover(function(){
+//     $(this).css("transform","scale(1.5)")
+//   })
+//   $('.box').mouseleave(function(){
+//     $(this).css("transform","scale(1)")
+//   })
+//   $('.box').mousemove(function(){
+//     $(this).css("transform","pink")
+//   })  
+//   $('.box').mouseup(function(){
+//     $(this).css("transform","scale(1)")
+
+//   })
+// </script> -->
+
+ <!-- <script>
+// let button1=document.querySelector("#btn");
+
+// let btn="light";
+
+// button1.addEventListener("click",function (){ 
+//   if(btn=="light"){
+//     btn="dark"
+
+//     document.querySelector("body").style.backgroundColor="seagreen";
+    
+//   }
+//   else{
+//     btn="light";
+//     document.querySelector("body").style.backgroundColor="skyblue";
+//     btn="light";
+//   }
+//   console.log(btn);
+// });
+// </script> --> 
+<script>
+$(document).ready(function(){
+$('input').focusin(function(){
+  $(this).css("background-color","lightgray");
+  $('.nothing').show();
+})
+
+$('input').focusout(function(){
+  $(this).css("background-color","white");
+$('.nothing').hide();
+})
+})
+</script>
+
+</body>
+</html>
